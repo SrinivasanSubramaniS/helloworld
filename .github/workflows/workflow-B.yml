@@ -13,7 +13,8 @@ on:
 jobs:
   triage:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
+    - run: echo "The job workflow-b will call by Reusable YAML file. Status triggered by a ${{ github.event_name }} event."
     - uses: actions/labeler@v4
       with:
         repo-token: ${{ secrets.token }}
