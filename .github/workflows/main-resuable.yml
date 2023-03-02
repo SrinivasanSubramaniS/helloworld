@@ -1,20 +1,21 @@
 name: Call a reusable workflow
 
+
 on:
   pull_request:
     branches:
       - main
-
 jobs:
   call-workflow:
-    uses: helloworld/.github/workflows/github-actions-demo.yml@main
-      
+    uses: SrinivasanSubramaniS/helloworld/.github/workflows/github-actions-demo.yml@main
+    
   call-workflow-passing-data:
     permissions:
       contents: read
       pull-requests: write
-    uses: helloworld/.github/workflows/workflow-B.yml@main
+    uses: SrinivasanSubramaniS/helloworld/.github/workflows/workflow-B.yml@main
     with:
       config-path: .github/labeler.yml
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }} 
+

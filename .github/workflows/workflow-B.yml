@@ -11,10 +11,10 @@ on:
         required: true
 
 jobs:
-  triage:
+   Workflow-B-file:
     runs-on: ubuntu-latest
-    steps: 
-    - run: echo "The job workflow-b will call by Reusable YAML file. Status triggered by a ${{ github.event_name }} event."
+    steps:
+    - run: echo "🎉 The job was automatically triggered by a main-resuable.yml. Then ${{ github.event_name }} event."
     - uses: actions/labeler@v4
       with:
         repo-token: ${{ secrets.token }}
