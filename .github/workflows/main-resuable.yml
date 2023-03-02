@@ -7,13 +7,13 @@ on:
 
 jobs:
   call-workflow:
-    uses: SrinivasanSubramaniS/helloworld/.github/workflows/github-actions-demo.yml@v1 
+    uses: helloworld/.github/workflows/github-actions-demo.yml@main
       
   call-workflow-passing-data:
     permissions:
       contents: read
       pull-requests: write
-    uses: SrinivasanSubramaniS/helloworld/.github/workflows/workflow-B.yml@main
+    uses: helloworld/.github/workflows/workflow-B.yml@main
     with:
       config-path: .github/labeler.yml
     secrets:
