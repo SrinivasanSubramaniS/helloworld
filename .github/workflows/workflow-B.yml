@@ -11,10 +11,11 @@ on:
         required: true
 
 jobs:
-  Workflow-B-file: 
+   Workflow-B-file:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."- uses: actions/labeler@v4
+    - run: echo "🎉 The job was automatically triggered by a main-resuable.yml. Then ${{ github.event_name }} event."
+    - uses: actions/labeler@v4
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
