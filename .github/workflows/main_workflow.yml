@@ -160,11 +160,4 @@ jobs:
         uses: Azure/functions-action@v1
         with: 
           app-name: ${{ env.FUNCTION }} 
-          package: ./publish/function
-          
-          <packageSourceCredentials>
-    <myFeed>
-        <add key="Username" value="myusername" />
-        <add key="ClearTextPassword" value="mytokencomeshere" />
-      </myFeed>
-  </packageSourceCredentials>
+          package: ./publish/function 
