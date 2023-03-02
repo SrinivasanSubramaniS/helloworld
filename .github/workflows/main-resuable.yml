@@ -7,9 +7,7 @@ on:
 
 jobs:
   call-workflow:
-    uses: SrinivasanSubramaniS/helloworld/.github/workflows/github-actions-demo.yml@v1
- steps:
-      - run: echo "🎉 The job was called in main-reusable.yml."
+    uses: SrinivasanSubramaniS/helloworld/.github/workflows/github-actions-demo.yml@v1 
       
   call-workflow-passing-data:
     permissions:
